@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของฉัน - Profile Card</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Header / Banner -->
+        <div class="card-header">
+            <div class="edit-btn-container">
+                <button class="btn-edit" id="toggleEditBtn" onclick="toggleEdit()">
+                    <i class="fa-solid fa-pen-to-square"></i> แก้ไขโปรไฟล์
+                </button>
+            </div>
+        </div>
+
+        <!-- รูปโปรไฟล์ -->
+        <div class="avatar-container">
+            <img src="photo/2f3d9c6458e03ea2002ad6ee7a2aa88e.jpg" alt="Profile Picture" class="avatar-img" id="avatarImg">
+        </div>
+
+        <!-- รายละเอียดข้อมูลส่วนตัว -->
+        <div class="card-body">
+            <!-- ชื่อ-นามสกุล -->
+            <h2 class="profile-name editable" id="userName" contenteditable="false">คุณณิชา พัฒนากุล</h2>
+            
+            <!-- ตำแหน่ง / อาชีพ -->
+            <p class="profile-role editable" id="userRole" contenteditable="false">Frontend Developer & UI/UX Designer</p>
+
+            <!-- คติประจำใจ / คำอธิบายสั้นๆ -->
+            <div class="profile-bio editable" id="userBio" contenteditable="false">
+                มุ่งมั่นพัฒนาเว็บไซต์และแอปพลิเคชันที่ใช้งานง่าย สวยงาม และตอบโจทย์ผู้ใช้งาน มีความเชี่ยวชาญด้าน HTML, CSS, JavaScript และการออกแบบระบบดิจิทัล
+            </div>
+
+            <!-- ข้อมูลติดต่อ/ข้อมูลเพิ่มเติม -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span class="info-label">อีเมล</span>
+                        <span class="info-value editable" id="userEmail" contenteditable="false">nicha.dev@example.com</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span class="info-label">เบอร์โทรศัพท์</span>
+                        <span class="info-value editable" id="userPhone" contenteditable="false">089-123-4567</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span class="info-label">ที่อยู่ / สถานที่</span>
+                        <span class="info-value editable" id="userLocation" contenteditable="false">กรุงเทพมหานคร, ประเทศไทย</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <span class="info-label">เว็บไซต์ / ผลงาน</span>
+                        <span class="info-value editable" id="userWebsite" contenteditable="false">www.nichadev.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ปุ่มบันทึกการแก้ไข -->
+            <div class="save-bar">
+                <button class="btn-save" onclick="saveData()"><i class="fa-solid fa-check"></i> บันทึกข้อมูล</button>
+                <button class="btn-cancel" onclick="toggleEdit()"><i class="fa-solid fa-xmark"></i> ยกเลิก</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- เชื่อมต่อไฟล์ JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
