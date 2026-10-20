@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #6A1B9A; /* สีม่วงเข้ม */
-    --primary-light: #9C4DCC; /* สีม่วงอ่อน */
-    --bg-color: #F5F0FA;      /* พื้นหลังสีม่วงอ่อน */
-    --card-bg: #FFFFFF;       /* สีพื้นหลังการ์ด */
-    --text-main: #2C2340;     /* สีตัวอักษรหลัก */
-    --text-muted: #7B7288;    /* สีตัวอักษรรอง */
-    --border-radius: 16px;    /* ความโค้งของขอบ */
+    --primary-color: #1b365e; /* สีเขียวเข้ม */
+    --primary-light: #4a8c8c;
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-main: #2c3e50;
+    --text-muted: #6c757d;
+    --border-radius: 16px;
 }
 
 * {
@@ -151,7 +151,7 @@ body {
 }
 
 body.is-editing .editable {
-    background-color: #14128a !important;
+    background-color: #3ec2a5 !important;
     border: 1px dashed var(--primary-color) !important;
     padding: 2px 6px;
     border-radius: 4px;
